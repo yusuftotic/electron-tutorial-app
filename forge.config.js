@@ -52,7 +52,7 @@ module.exports = {
           name: 'electron-tutorial-app'
         },
         prerelease: false,
-        draft: true,
+        draft: false,
         authToken: process.env.GITHUB_TOKEN
       }
     }
