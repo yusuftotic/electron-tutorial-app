@@ -4,6 +4,8 @@ const path = require('node:path')
 
 require('update-electron-app').updateElectronApp()
 
+require('dotenv').config();
+
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
