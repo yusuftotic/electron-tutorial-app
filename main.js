@@ -2,13 +2,14 @@ const { app, BrowserWindow, ipcMain } = require('electron')
 
 const path = require('node:path')
 
-require('update-electron-app')()
+require('update-electron-app').updateElectronApp()
 
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
+      nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js')
     }
   })

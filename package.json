@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "An Electron app to learn Electron.",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yusuftotic/electron-tutorial-app.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron-forge start",
